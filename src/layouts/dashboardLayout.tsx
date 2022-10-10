@@ -1,11 +1,15 @@
 import {
   Box,
   useBreakpointValue,
-  Text,
-  FormControl,
-  Input,
+  // Text,
+  // FormControl,
+  // Input,
 } from "@chakra-ui/react";
-import { BottomNaviagtion, SideBar } from "../components/Navigation";
+import {
+  BottomNaviagtion,
+  SideBar,
+  DeskTopBottomNaviagtion,
+} from "../components/Navigation";
 
 const smVariant = { navigation: "mobileNav", navigationButton: true };
 const mdVariant = { navigation: "sidebar", navigationButton: false };
@@ -49,6 +53,7 @@ export default function DashboardLayout({
               </Box>
             </Box>
           </Box>
+          <DeskTopBottomNaviagtion />
         </Box>
       )}
     </Box>
